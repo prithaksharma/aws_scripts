@@ -28,7 +28,7 @@ def execute_commands_over_ssh ( instance_ip, command='/sbin/ifconfig'):
   ssh = paramiko.SSHClient()
   ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
   try:
-    ssh.connect(instance_ip, port=22, username = 'ubuntu', key_filename = './saffron_development_jan.pem')
+    ssh.connect(instance_ip, port=22, username = 'ubuntu', key_filename = './YOUR_SSH_KEY_LOCATION.pem')
     print 'Executing command: {0}'.format(command)
     cmd = 'sudo ' + command
     stdin, stdout, stderr = ssh.exec_command(cmd)
