@@ -1,6 +1,6 @@
 # aws_scripts
 
-# Useful scripts that uses python boto library
+# Useful Python Scrips for AWS Sysadmins 
 ~~~
 list_iam_certs_about_to_expire.py  -> Lists SSL Certs in IAM that are about to expire
 create_snapshots.py  -> Creates EBS snapshots of running Instances based on the Instance TAG ; rotates the SNAPSHOTS as well
